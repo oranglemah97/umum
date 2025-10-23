@@ -108,19 +108,19 @@ proxy-groups:
 proxy-providers:
   'line':
     url: >-
-      https://raw.githubusercontent.com/oranglemah97/config/refs/heads/main/line.yaml?token=GHSAT0AAAAAADNTP7W6STWGAFACR5DZAFA62HZXUXQ
+      https://raw.githubusercontent.com/oranglemah97/umum/refs/heads/main/line.txt
     path: ./line
     override: {skip-cert-verify: true, packet-encoding: xudp, network: tcp, smux: {enabled: true}, additional-prefix: 'line '}
     <<: *prof
   'edu':
     url: >-
-      https://raw.githubusercontent.com/oranglemah97/config/refs/heads/main/edu.yaml?token=GHSAT0AAAAAADNTP7W6E2GJSEH56X5KWX2G2HZXOSQ
+      https://raw.githubusercontent.com/oranglemah97/umum/refs/heads/main/edu.txt
     path: ./edu
     override: {skip-cert-verify: true, packet-encoding: xudp, network: tcp, smux: {enabled: true}, additional-prefix: 'edu '}
     <<: *prof
   'tiktok':
     url: >-
-      https://raw.githubusercontent.com/oranglemah97/config/refs/heads/main/tiktok.yaml?token=GHSAT0AAAAAADNTP7W73JCHECKTRQCSVNNW2HZXPVA
+      https://raw.githubusercontent.com/oranglemah97/umum/refs/heads/main/tiktok.txt
     path: ./tiktok
     override: {skip-cert-verify: true, packet-encoding: xudp, network: tcp, smux: {enabled: true}, additional-prefix: 'tiktok '}
     <<: *prof
