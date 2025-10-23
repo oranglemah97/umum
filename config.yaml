@@ -104,11 +104,11 @@ proxy-groups:
       type: fallback
       url: 'http://connectivitycheck.gstatic.com/generate_204'
 proxy-providers:
-  'line':
+  'ava':
     url: >-
       https://raw.githubusercontent.com/oranglemah97/umum/refs/heads/main/line.txt
-    path: ./line
-    override: {skip-cert-verify: true, packet-encoding: xudp, network: tcp, smux: {enabled: true}, additional-prefix: 'line '}
+    path: ./ava
+    override: {skip-cert-verify: true, packet-encoding: xudp, network: tcp, smux: {enabled: true}, additional-prefix: 'ava '}
     <<: *prof
   'edu':
     url: >-
