@@ -126,7 +126,7 @@ proxy-providers:
     <<: *prof
   'udp2':
     url: >-
-      https://raw.githubusercontent.com/oranglemah/khusus/refs/heads/main/udp.txt
+      https://raw.githubusercontent.com/oranglemah97/umum/refs/heads/main/udp.txt
     path: ./UDP2
     override: {skip-cert-verify: true, packet-encoding: xudp, network: tcp, smux: {enabled: true}, additional-prefix: 'UDP '}
     <<: *prof
