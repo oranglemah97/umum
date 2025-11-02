@@ -129,5 +129,3 @@ sniffer:
   parse-pure-ip: true
   - "+.sunlogin.net"
   - "+.push.apple.com"
-  force-dns-mapping: true
-  parse-pure-ip: true
