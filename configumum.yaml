@@ -1,0 +1,133 @@
+---
+port: 7890
+socks-port: 7891
+redir-port: 9797
+mixed-port: 7893
+tproxy-port: 9898
+ipv6: false
+mode: rule
+log-level: silent
+allow-lan: true
+external-controller: 0.0.0.0:9090
+secret: ""
+bind-address: "*"
+unified-delay: true
+profile:
+  store-selected: true
+dns:
+  enable: true
+  ipv6: false
+  enhanced-mode: redir-host
+  listen: 0.0.0.0:7874
+  nameserver:
+  - 1.1.1.1
+  default-nameserver:
+  - 8.8.8.8
+  proxy-server-nameserver:
+  - 112.215.203.246
+  - 112.215.203.247
+  respect-rules: true
+proxies:
+proxy-groups:
+- name: PROXY 
+  type: select
+  use:
+  - ID
+  - SG
+  - MIX
+- name: LOAD-BALANCE ID
+  type: load-balance
+  strategy: round-robin
+  use:
+  - ID
+- name: LOAD-BALANCE SG
+  type: load-balance
+  strategy: round-robin
+  use:
+  - SG
+- name: URLTEST ID
+  type: url-test
+  use:
+  - ID
+- name: URLTEST SG
+  type: url-test
+  use:
+  - SG
+- name: FALLBACK
+  type: fallback
+  use:
+  - ID
+  - SG
+  - MIX
+proxy-providers:
+  ID:
+    type: http
+    url: "https://raw.githubusercontent.com/oranglemah/khusus/refs/heads/main/eduudp.txt"
+    path: "./proxy_provider/ID.yaml"  # cache lokal (opsional tapi disarankan)
+    interval: 86400
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  SG:
+    type: http
+    url: "https://raw.githubusercontent.com/oranglemah97/umum/refs/heads/main/tiktok.txt"
+    path: "./proxy_provider/SG.yaml"  # cache lokal (opsional tapi disarankan)
+    interval: 86400
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+  MIX:
+    type: http
+    url: "https://raw.githubusercontent.com/oranglemah97/umum/refs/heads/main/line.txt"
+    path: "./proxy_provider/MIX.yaml"  # cache lokal (opsional tapi disarankan)
+    interval: 86400
+    health-check:
+      enable: true
+      url: http://www.gstatic.com/generate_204
+      interval: 300
+rules:
+- MATCH,PROXY,LOAD-BALANCE ID,LOAD-BALANCE SG,URLTEST ID,URLTEST SG,FALLBACK
+external-ui: ./dashboard 
+external-ui-url: "https://github.com/Zephyruso/zashboard/archive/gh-pages.zip"
+keep-alive-interval: 15
+keep-alive-idle: 600
+geodata-loader: memconservative
+tcp-concurrent: true
+global-client-fingerprint: chrome
+geox-url: {}
+sniffer:
+  enable: true
+  override-destination: true
+  sniff:
+    QUIC:
+      ports:
+      - 443
+    TLS:
+      ports:
+      - 443
+      - 8443
+    HTTP:
+      ports:
+      - 80
+      - 8080-8880
+      override-destination: true
+  force-domain:
+  - "+.netflix.com"
+  - "+.nflxvideo.net"
+  - "+.amazonaws.com"
+  - "+.media.dssott.com"
+  skip-domain:
+  - "+.apple.com"
+  - Mijia Cloud
+  - dlg.io.mi.com
+  - "+.oray.com"
+  - "+.sunlogin.net"
+  - "+.push.apple.com"
+  force-dns-mapping: true
+  parse-pure-ip: true
+  - "+.sunlogin.net"
+  - "+.push.apple.com"
+  force-dns-mapping: true
+  parse-pure-ip: true
