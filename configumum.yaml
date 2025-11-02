@@ -127,4 +127,3 @@ sniffer:
   - "+.push.apple.com"
   force-dns-mapping: true
   parse-pure-ip: true
-  
