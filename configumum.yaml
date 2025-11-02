@@ -62,7 +62,7 @@ proxy-groups:
 proxy-providers:
   ID:
     type: http
-    url: "https://raw.githubusercontent.com/oranglemah97/khusus/refs/heads/main/edu.txt"
+    url: "https://raw.githubusercontent.com/oranglemah97/umum/refs/heads/main/edu.txt"
     path: "./proxy_provider/ID.yaml"  # cache lokal (opsional tapi disarankan)
     interval: 86400
     health-check:
