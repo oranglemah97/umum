@@ -33,6 +33,13 @@ dns:
   respect-rules: true
 proxies:
 proxy-groups:
+- name: "MATCH"
+  type: select
+  disable-udp: false
+  proxies:
+  - FALLBACK EDU
+  - FALLBACK LINE
+  - FALLBACK TOKTOK
 - name: PROXY 
   type: select
   use:
@@ -61,12 +68,18 @@ proxy-groups:
   type: url-test
   use:
   - TOKTOK
-- name: FALLBACK
+- name: FALLBACK EDU
   type: fallback
   use:
   - EDU
+- name: FALLBACK LINE
+  type: fallback
+  use:
   - LINE
-  - TOKTOK
+- name: FALLBACK TOKTOK
+  type: fallback
+  use:
+  - TOKTOK  
 proxy-providers:
   EDU:
     type: http
