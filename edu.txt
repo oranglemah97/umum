@@ -5,8 +5,8 @@ vless://eeeeeee3-eeee-4eee-aeee-eeeeeeeeeee5@support.zoom.us:443?encryption=none
 vless://eeeeeee3-eeee-4eee-aeee-eeeeeeeeeee5@support.zoom.us:443?encryption=none&type=ws&host=support.zoom.us.bokepindo.qzz.io&path=/203.194.112.119-8443&security=tls&sni=support.zoom.us.bokepindo.qzz.io#ID+CV. Rumahweb Indonesia
 vless://eeeeeee3-eeee-4eee-aeee-eeeeeeeeeee5@support.zoom.us:443?encryption=none&type=ws&host=support.zoom.us.bokepindo.qzz.io&path=/156.244.1.250-8443&security=tls&sni=support.zoom.us.bokepindo.qzz.io#ID+Lightnode Limited
 vless://eeeeeee3-eeee-4eee-aeee-eeeeeeeeeee5@104.17.3.81:443?encryption=none&type=ws&host=bokepindo.qzz.io&path=/156.244.1.250-8443&security=tls&sni=bokepindo.qzz.io#ID+Lightnode Limited
-vless://eeeeeee3-eeee-4eee-aeee-eeeeeeeeeee5@104.17.3.81.io:443?encryption=none&type=ws&host=bokepindo.qzz.io&path=/103.6.207.108-8080&security=tls&sni=bokepindo.qzz.io#ID+PT Pusat Media Indonesia
-vless://eeeeeee3-eeee-4eee-aeee-eeeeeeeeeee5104.17.3.81:443?encryption=none&type=ws&host=bokepindo.qzz.io&path=/149.129.250.8-443&security=tls&sni=bokepindo.qzz.io#ID+21/F
+vless://eeeeeee3-eeee-4eee-aeee-eeeeeeeeeee5@104.17.3.81:443?encryption=none&type=ws&host=bokepindo.qzz.io&path=/103.6.207.108-8080&security=tls&sni=bokepindo.qzz.io#ID+PT Pusat Media Indonesia
+vless://eeeeeee3-eeee-4eee-aeee-eeeeeeeeeee5@104.17.3.81:443?encryption=none&type=ws&host=bokepindo.qzz.io&path=/149.129.250.8-443&security=tls&sni=bokepindo.qzz.io#ID+21/F
 vless://eeeeeee3-eeee-4eee-aeee-eeeeeeeeeee5@104.17.3.81:443?encryption=none&type=ws&host=bokepindo.qzz.io&path=/203.194.112.119-2053&security=tls&sni=bokepindo.qzz.io#ID+CV. Rumahweb Indonesia
 vless://fc60147e-76b8-4bc5-b691-90b2da79e3d2@104.17.3.81:443?encryption=none&type=ws&host=sub.sambat.xyz&security=tls&sni=sub.sambat.xyz&path=%2F103.6.207.108-8080#%F0%9F%87%AE%F0%9F%87%A9%20PT%20Pusat%20Media%20Indonesia%20WS%20TLS%20[103.6.207.108]
 vless://eeeeeee3-eeee-4eee-aeee-eeeeeeeeeee5@edu.udemy.com:443?encryption=none&type=ws&host=edu.udemy.com.bokepindo.qzz.io&path=/156.244.1.250-8443&security=tls&sni=edu.udemy.com.bokepindo.qzz.io#ID+Lightnode Limited
