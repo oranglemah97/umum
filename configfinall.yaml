@@ -75,7 +75,7 @@ proxy-providers:
       interval: 300
   LINE:
     type: http
-    url: "https://raw.githubusercontent.com/oranglemah97/umum/refs/heads/main/tiktok.txt"
+    url: "https://raw.githubusercontent.com/oranglemah97/umum/refs/heads/main/line.txt"
     path: "./proxy_provider/LINE.yaml"  # cache lokal (opsional tapi disarankan)
     interval: 86400
     health-check:
@@ -84,7 +84,7 @@ proxy-providers:
       interval: 300
   TOKTOK:
     type: http
-    url: "https://raw.githubusercontent.com/oranglemah97/umum/refs/heads/main/line.txt"
+    url: "https://raw.githubusercontent.com/oranglemah97/umum/refs/heads/main/tiktok.txt"
     path: "./proxy_provider/TOKTOK.yaml"  # cache lokal (opsional tapi disarankan)
     interval: 86400
     health-check:
