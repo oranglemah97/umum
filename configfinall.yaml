@@ -40,18 +40,23 @@ proxy-groups:
   - FALLBACK EDU
   - FALLBACK LINE
   - FALLBACK TOKTOK
+  - LB EDU
+  - LB LINE
+  - URLTEST EDU
+  - URLTEST LINE
+  - URLTEST TOKTOK
 - name: PROXY 
   type: select
   use:
   - EDU
   - LINE
   - TOKTOK
-- name: LOAD-BALANCE EDU
+- name: LB EDU
   type: load-balance
   strategy: round-robin
   use:
   - EDU
-- name: LOAD-BALANCE LINE
+- name: LB LINE
   type: load-balance
   strategy: round-robin
   use:
