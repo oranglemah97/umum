@@ -57,6 +57,10 @@ proxy-groups:
   type: url-test
   use:
   - LINE
+- name: URLTEST TOKTOK
+  type: url-test
+  use:
+  - TOKTOK
 - name: FALLBACK
   type: fallback
   use:
